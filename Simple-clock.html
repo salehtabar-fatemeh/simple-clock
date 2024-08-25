@@ -23,6 +23,17 @@
       let secondNeedle = document.querySelector("div.sec");
       let minutesNeedle = document.querySelector("div.min");
       let hourNeedle = document.querySelector("div.hour");
+      function updateClock(){
+            let nowTime = new Date();
+            let sec = nowTime.getSeconds();
+            let min = nowTime.getMinutes();
+            let hour = nowTime.getHours();
+            secondNeedle.style.transform = "rotate(" + sec*6 + "deg)";
+            minutesNeedle.style.transform = "rotate(" + min*6 + "deg)";
+            hourNeedle.style.transform = "rotate(" + hour*30 + "deg)";
+            showClock.innerHTML = nowTime.toLocaleTimeString();
+
+        }
     </script>
   </body>
 </html>
