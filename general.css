@@ -1,0 +1,66 @@
+body {
+    background-color: bisque;
+}
+
+div.clock {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(33, 94, 90, 1) 45%, rgba(0, 212, 255, 1) 100%);
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+div.sec {
+    background-color: rgb(139, 0, 0);
+    width: 4px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: rotate((0deg));
+    transform-origin: 50% 100%;
+}
+
+div.min {
+    background-color: rgb(18, 18, 21);
+    width: 6px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: rotate((0deg));
+    transform-origin: 50% 100%;
+}
+
+div.hour {
+    background-color: rgb(18, 18, 21);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: rotate((0deg));
+    transform-origin: 50% 100%;
+
+}
+
+div.center {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: 48%;
+}
+
+div.show-clock {
+    height: 100px;
+    direction: ltr;
+    font-weight: bold;
+    font-size: 35px
+}
+
+.w-15 {
+    width: 15%;
+}
