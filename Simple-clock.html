@@ -23,6 +23,7 @@
       let secondNeedle = document.querySelector("div.sec");
       let minutesNeedle = document.querySelector("div.min");
       let hourNeedle = document.querySelector("div.hour");
+      
       function updateClock(){
             let nowTime = new Date();
             let sec = nowTime.getSeconds();
@@ -34,6 +35,9 @@
             showClock.innerHTML = nowTime.toLocaleTimeString();
 
         }
+        updateClock();
+    
+        setInterval(updateClock,1000);
     </script>
   </body>
 </html>
