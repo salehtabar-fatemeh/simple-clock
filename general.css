@@ -9,6 +9,48 @@ div.clock {
     height: 300px;
     position: relative;
 }
+ul.clock-number li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+ul.clock-number li:first-child{
+    transform: translateX(-40px) translateY(19px);
+}
+ul.clock-number li:nth-child(2){
+    transform: translateX(7px) translateY(23px);
+}
+ul.clock-number li:nth-child(3){
+    transform: translateX(25px) translateY(43px);
+}
+ul.clock-number li:nth-child(4){
+    transform: translateX(15px) translateY(68px);
+}
+ul.clock-number li:nth-child(5){
+    transform: translateX(-30px) translateY(88px);
+}
+ul.clock-number li:nth-child(6){
+    transform: translateX(-100px) translateY(69px);
+}
+ul.clock-number li:nth-child(7){
+    transform: translateX(-170px) translateY(10px);
+}
+ul.clock-number li:nth-child(8){
+    transform: translateX(-210px) translateY(-78px);
+}
+ul.clock-number li:nth-child(9){
+    transform: translateX(-230px) translateY(-185px);
+}
+ul.clock-number li:nth-child(10){
+    transform: translateX(-220px) translateY(-280px);
+}
+ul.clock-number li:nth-child(11){
+    transform: translateX(-175px) translateY(-360px);
+}
+
+ul.clock-number li:last-child{
+    transform: translateX(-100px) translateY(-410px);
+}
 
 div.sec {
     background-color: rgb(139, 0, 0);
